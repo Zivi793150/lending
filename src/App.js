@@ -10,7 +10,7 @@ function App() {
     <div className="fitmin-landing">
       {/* Header */}
       <header className="fitmin-header">
-        <div className="fitmin-logo">FITMIN</div>
+        <div className="fitmin-logo" style={{ color: '#fff', fontFamily: 'Montserrat, Arial, sans-serif', fontWeight: 800, fontSize: '2.2rem', letterSpacing: '0.01em' }}>Fitmin</div>
         <nav className={`fitmin-nav${menuOpen ? ' open' : ''}`}>
           <a href="#about">О бренде</a>
           <a href="#products">Продукция</a>
