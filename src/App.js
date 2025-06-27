@@ -1,6 +1,8 @@
 import './App.css';
 import { useState } from 'react';
 
+const bgAdvantages = process.env.PUBLIC_URL + '/images/Fitmin_interzoo_1586x1058.png';
+
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -38,15 +40,15 @@ function App() {
           <a href="#form" className="fitmin-btn fitmin-hero-btn">Выбрать корм</a>
         </div>
         <div className="fitmin-hero-img">
-          {/* Временное изображение */}
-          <img src="https://www.fitmin.com/images/fitmin-hero-dog.jpg" alt="Fitmin Hero" />
+          {/* Большой баннер */}
+          <img src="/images/banner_thePet+_1920x660px_EN_DOG.jpg" alt="Fitmin Banner" />
         </div>
       </section>
 
       {/* О бренде */}
       <section className="fitmin-about" id="about">
         <div className="fitmin-about-img">
-          <img src="https://www.fitmin.com/images/fitmin-factory.jpg" alt="Fitmin Factory" />
+          <img src="/images/20200624121700_DSC08178-01.jpeg" alt="Fitmin Factory" />
         </div>
         <div className="fitmin-about-content">
           <h2>О бренде Fitmin</h2>
@@ -59,25 +61,25 @@ function App() {
         <h2>Линейка продукции</h2>
         <div className="fitmin-products-list">
           <div className="fitmin-product-card">
-            <img src="https://www.fitmin.com/images/dog-food.jpg" alt="Для собак" />
+            <img src="/images/feeding dogs.jpg" alt="Для собак" />
             <h3>Для собак</h3>
             <p>Сухие и влажные корма для собак всех пород и возрастов.</p>
             <a href="#" className="fitmin-btn fitmin-product-btn">Подробнее</a>
           </div>
           <div className="fitmin-product-card">
-            <img src="https://www.fitmin.com/images/cat-food.jpg" alt="Для кошек" />
+            <img src="/images/20200401155735_DSC02018-01 (1).jpeg" alt="Для кошек" />
             <h3>Для кошек</h3>
             <p>Питательные корма и лакомства для кошек.</p>
             <a href="#" className="fitmin-btn fitmin-product-btn">Подробнее</a>
           </div>
           <div className="fitmin-product-card">
-            <img src="https://www.fitmin.com/images/vet-food.jpg" alt="Ветеринарные корма" />
+            <img src="/images/dental sticks kelp.png" alt="Ветеринарные корма" />
             <h3>Ветеринарные корма</h3>
             <p>Специализированные диеты для здоровья питомцев.</p>
             <a href="#" className="fitmin-btn fitmin-product-btn">Подробнее</a>
           </div>
           <div className="fitmin-product-card">
-            <img src="https://www.fitmin.com/images/treats.jpg" alt="Деликатесы" />
+            <img src="/images/EUROBEEF.jpg" alt="Деликатесы" />
             <h3>Деликатесы</h3>
             <p>Натуральные лакомства для поощрения и заботы.</p>
             <a href="#" className="fitmin-btn fitmin-product-btn">Подробнее</a>
@@ -86,24 +88,43 @@ function App() {
       </section>
 
       {/* Преимущества */}
-      <section className="fitmin-advantages" id="advantages">
-        <h2>Преимущества FITMIN</h2>
-        <div className="fitmin-advantages-list">
-          <div className="fitmin-advantage">
-            <span role="img" aria-label="meat">🥩</span>
-            <p>Свежие мясные ингредиенты</p>
-          </div>
-          <div className="fitmin-advantage">
-            <span role="img" aria-label="quality">✅</span>
-            <p>Проверенное европейское качество</p>
-          </div>
-          <div className="fitmin-advantage">
-            <span role="img" aria-label="science">🔬</span>
-            <p>Научный подход к питанию</p>
-          </div>
-          <div className="fitmin-advantage">
-            <span role="img" aria-label="no-gmo">🚫🌽</span>
-            <p>Без ГМО и искусственных добавок</p>
+      <section
+        className="fitmin-advantages"
+        id="advantages"
+        style={{
+          minHeight: '480px',
+          padding: '70px 7vw 70px 7vw',
+          marginBottom: '70px',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+        }}
+      >
+        <div
+          className="fitmin-advantages-bg"
+          style={{
+            '--fitmin-advantages-bg-img': `url(${bgAdvantages})`
+          }}
+        ></div>
+        <div className="fitmin-advantages-inner" style={{maxWidth: '1200px', margin: '0 auto', width: '100%'}}>
+          <h2>Преимущества FITMIN</h2>
+          <div className="fitmin-advantages-list">
+            <div className="fitmin-advantage">
+              <span role="img" aria-label="meat">🥩</span>
+              <p>Свежие мясные ингредиенты</p>
+            </div>
+            <div className="fitmin-advantage">
+              <span role="img" aria-label="quality">✅</span>
+              <p>Проверенное европейское качество</p>
+            </div>
+            <div className="fitmin-advantage">
+              <span role="img" aria-label="science">🔬</span>
+              <p>Научный подход к питанию</p>
+            </div>
+            <div className="fitmin-advantage">
+              <span role="img" aria-label="no-gmo">🚫🌽</span>
+              <p>Без ГМО и искусственных добавок</p>
+            </div>
           </div>
         </div>
       </section>
