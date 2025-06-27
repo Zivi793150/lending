@@ -37,7 +37,7 @@ function App() {
         <div className="fitmin-hero-content">
           <h1>Забота о питомцах начинается с правильного питания</h1>
           <p>Премиальные корма Fitmin — свежесть, качество, забота</p>
-          <a href="#form" className="fitmin-btn fitmin-hero-btn">Выбрать корм</a>
+          <a href="https://www.fitmin.com" target="_blank" rel="noopener noreferrer" className="fitmin-btn fitmin-hero-btn">Выбрать корм</a>
         </div>
         <div className="fitmin-hero-img">
           {/* Большой баннер */}
@@ -64,19 +64,19 @@ function App() {
             <img src="/images/feeding dogs.jpg" alt="Для собак" />
             <h3>Для собак</h3>
             <p>Сухие и влажные корма для собак всех пород и возрастов.</p>
-            <a href="#" className="fitmin-btn fitmin-product-btn">Подробнее</a>
+            <a href="https://www.fitmin.com/ru/sobaki/sobaki" target="_blank" rel="noopener noreferrer" className="fitmin-btn fitmin-product-btn">Подробнее</a>
           </div>
           <div className="fitmin-product-card">
             <img src="/images/20200401155735_DSC02018-01 (1).jpeg" alt="Для кошек" />
             <h3>Для кошек</h3>
             <p>Питательные корма и лакомства для кошек.</p>
-            <a href="#" className="fitmin-btn fitmin-product-btn">Подробнее</a>
+            <a href="https://www.fitmin.com/ru/koshki/fitmin-dlya-koshek" target="_blank" rel="noopener noreferrer" className="fitmin-btn fitmin-product-btn">Подробнее</a>
           </div>
           <div className="fitmin-product-card">
             <img src="/images/dental sticks kelp.png" alt="Ветеринарные корма" />
             <h3>Ветеринарные корма</h3>
             <p>Специализированные диеты для здоровья питомцев.</p>
-            <a href="#" className="fitmin-btn fitmin-product-btn">Подробнее</a>
+            <a href="https://www.fitmin.com/ru/sobaki/vlazhnye-korma" target="_blank" rel="noopener noreferrer" className="fitmin-btn fitmin-product-btn">Подробнее</a>
           </div>
           <div className="fitmin-product-card">
             <img src="/images/EUROBEEF.jpg" alt="Деликатесы" />
@@ -150,22 +150,41 @@ function App() {
       </section>
 
       {/* Контакты и подвал */}
-      <footer className="fitmin-footer" id="contacts">
-        <div className="fitmin-footer-contacts">
-          <div>
-            <b>Телефон:</b> <a href="tel:+77001234567">+7 (700) 123-45-67</a>
+      <footer className="fitmin-footer">
+        <div className="fitmin-container">
+          <div className="fitmin-footer-content">
+            <div className="fitmin-footer-section">
+              <h3>Fitmin</h3>
+              <p>Качественные корма для ваших питомцев</p>
+            </div>
+            <div className="fitmin-footer-section">
+              <h3>Контакты</h3>
+              <p>Телефон: <span className="fitmin-placeholder">уточняется</span></p>
+              <p>Email: <span className="fitmin-placeholder">уточняется</span></p>
+            </div>
+            <div className="fitmin-footer-section">
+              <h3>Социальные сети</h3>
+              <div className="fitmin-social-links">
+                <a href="https://www.instagram.com/fitmin.international/" target="_blank" rel="noopener noreferrer" className="fitmin-social-link">
+                  <i className="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCgvWtRFkGnc2zj8OObu6pcQ" target="_blank" rel="noopener noreferrer" className="fitmin-social-link">
+                  <i className="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/dibaq-international/" target="_blank" rel="noopener noreferrer" className="fitmin-social-link">
+                  <i className="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/FitminInternational" target="_blank" rel="noopener noreferrer" className="fitmin-social-link">
+                  <i className="fab fa-facebook"></i>
+                </a>
+              </div>
+            </div>
           </div>
-          <div>
-            <b>E-mail:</b> <a href="mailto:info@fitmin.kz">info@fitmin.kz</a>
-          </div>
-          <div className="fitmin-footer-socials">
-            <a href="#">VK</a> | <a href="#">Instagram</a> | <a href="#">WhatsApp</a>
+          <div className="fitmin-footer-bottom">
+            <p>Copyright © 2010 - 2025 Fitmin.com, všechna práva vyhrazena | Cookies</p>
+            <p>Vytvořilo PLEGI s.r.o.</p>
           </div>
         </div>
-        <div className="fitmin-footer-policy">
-          <a href="#">Политика конфиденциальности</a> | <a href="#">Пользовательское соглашение</a>
-        </div>
-        <div className="fitmin-footer-copy">© 2024 Fitmin. Все права защищены.</div>
       </footer>
     </div>
   );

@@ -328,7 +328,7 @@ body, .fitmin-landing {
   background: #5fae54;
   color: #fff;
   box-shadow: 0 6px 24px rgba(123,184,111,0.18);
-  transform: translateY(-2px) scale(1.04);
+  transform: translateY(-2px) scale(1.08);
 }
 @media (max-width: 900px) {
   .fitmin-products-list {
@@ -544,51 +544,122 @@ body, .fitmin-landing {
   margin-top: 22px;
 }
 
-/* Footer */
+/* Новый компактный подвал */
 .fitmin-footer {
-  background: #4b2e1a;
+  background: #7b5c3b;
   color: #fff;
-  padding: 48px 7vw 24px 7vw;
-  text-align: center;
-  margin-top: 80px;
-  border-radius: 0;
-  box-shadow: 0 -2px 16px rgba(75,46,26,0.08);
+  padding: 32px 0 12px;
+  margin-top: 60px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  box-shadow: 0 -4px 24px 0 rgba(75, 46, 26, 0.10), 0 -1.5px 0 #e5d3c0;
+  position: relative;
 }
-.fitmin-footer-contacts {
-  margin-bottom: 22px;
-  font-size: 1.13rem;
+
+.fitmin-footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 32px;
+  margin-bottom: 18px;
+  align-items: flex-start;
 }
-.fitmin-footer-contacts a {
+
+.fitmin-footer-section h3 {
   color: #fff;
-  text-decoration: underline;
-  margin: 0 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.08rem;
+  margin-bottom: 12px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.fitmin-footer-section p {
+  color: #f3ede6;
+  line-height: 1.5;
+  margin-bottom: 7px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.98rem;
+  font-weight: 400;
+}
+
+.fitmin-footer-section b, .fitmin-footer-section strong {
+  color: #fff;
   font-weight: 600;
 }
-.fitmin-footer-socials {
-  margin-top: 10px;
+
+.fitmin-placeholder {
+  color: #e5d3c0;
+  font-style: italic;
 }
-.fitmin-footer-socials a {
-  color: #7bb86f;
-  font-size: 1.3rem;
-  margin: 0 10px;
+
+.fitmin-social-links {
+  display: flex;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.fitmin-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  color: #ff6b35;
+  border-radius: 50%;
+  border: 2px solid #ff6b35;
   text-decoration: none;
-  transition: color 0.2s;
+  transition: all 0.22s cubic-bezier(.4,0,.2,1);
+  font-size: 1.08rem;
+  box-shadow: 0 1px 6px rgba(255,107,53,0.07);
 }
-.fitmin-footer-socials a:hover {
-  color: #b6a16b;
+
+.fitmin-social-link:hover {
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+  color: #fff;
+  border-color: #f7931e;
+  transform: translateY(-2px) scale(1.07);
+  box-shadow: 0 4px 16px rgba(255, 107, 53, 0.13);
 }
-.fitmin-footer-policy {
-  margin-bottom: 14px;
+
+.fitmin-footer-bottom {
+  border-top: 1px solid #e5d3c0;
+  padding-top: 10px;
+  text-align: center;
 }
-.fitmin-footer-policy a {
-  color: #b6a16b;
-  text-decoration: underline;
-  margin: 0 8px;
-  font-weight: 600;
+
+.fitmin-footer-bottom p {
+  color: #e5d3c0;
+  font-size: 0.93rem;
+  margin: 3px 0;
+  font-family: 'Inter', sans-serif;
 }
-.fitmin-footer-copy {
-  font-size: 1.05rem;
-  opacity: 0.85;
+
+.fitmin-footer-section:first-child {
+  margin-left: 32px;
+}
+@media (max-width: 900px) {
+  .fitmin-footer-section:first-child {
+    margin-left: 0;
+  }
+}
+@media (max-width: 600px) {
+  .fitmin-footer {
+    padding: 16px 0 6px;
+  }
+  .fitmin-footer-content {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .fitmin-footer-section h3 {
+    margin-bottom: 7px;
+  }
+  .fitmin-social-links {
+    justify-content: center;
+    margin-top: 4px;
+  }
 }
 
 /* Адаптивность */
