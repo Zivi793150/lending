@@ -41,14 +41,14 @@ function App() {
         </div>
         <div className="fitmin-hero-img">
           {/* Большой баннер */}
-          <img src="/images/banner_thePet+_1920x660px_EN_DOG.jpg" alt="Fitmin Banner" />
+          <img src="/images/banner.png" alt="Fitmin Banner" />
         </div>
       </section>
 
       {/* О бренде */}
       <section className="fitmin-about" id="about">
         <div className="fitmin-about-img">
-          <img src="/images/20200624121700_DSC08178-01.jpeg" alt="Fitmin Factory" />
+          <img src="/images/korm.png" alt="Fitmin Factory" />
         </div>
         <div className="fitmin-about-content">
           <h2>О бренде Fitmin</h2>
@@ -122,7 +122,7 @@ function App() {
               <p>Научный подход к питанию</p>
             </div>
             <div className="fitmin-advantage">
-              <span role="img" aria-label="no-gmo">🚫🌽</span>
+              <span role="img" aria-label="no-gmo">🌱</span>
               <p>Без ГМО и искусственных добавок</p>
             </div>
           </div>
@@ -133,8 +133,10 @@ function App() {
       <section className="fitmin-form-section" id="form">
         <h2>Оставить заявку</h2>
         <form className="fitmin-form">
-          <input type="text" name="name" placeholder="Имя" required />
-          <input type="tel" name="phone" placeholder="Телефон" required />
+          <div className="fitmin-form-row">
+            <input type="text" name="name" placeholder="Имя" required />
+            <input type="tel" name="phone" placeholder="Телефон" required />
+          </div>
           <input type="email" name="email" placeholder="E-mail" required />
           <select name="interest" required>
             <option value="">Тип интереса</option>
