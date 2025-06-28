@@ -802,16 +802,16 @@ body, .fitmin-landing {
     gap: 0.5rem;
   }
 
-  .fitmin-footer {
-    padding: 1.5rem 2vw 1rem;
-  }
-
   .fitmin-footer-content {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     gap: 3rem;
     max-width: 80vw;
+  }
+  .fitmin-footer-section {
+    text-align: left;
+    align-items: flex-start;
   }
 }
 
@@ -982,7 +982,11 @@ body, .fitmin-landing {
   }
 
   .fitmin-footer-content {
-    max-width: 70vw;
+    max-width: 80vw;
+  }
+  .fitmin-footer-section {
+    text-align: left;
+    align-items: flex-start;
   }
 }
 
