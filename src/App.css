@@ -1072,6 +1072,63 @@ body, .fitmin-landing {
     font-size: 0.95rem;
     margin-bottom: 1rem;
   }
+  .fitmin-advantages-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 12px;
+    max-width: 100vw;
+  }
+  .fitmin-advantage {
+    min-width: 0;
+    max-width: 100vw;
+    padding: 16px 6px 12px 6px;
+    border-radius: 16px;
+    font-size: 0.95rem;
+  }
+  .fitmin-advantage span {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+  .fitmin-advantages h2 {
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+  }
+  .fitmin-products-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px;
+    max-width: 100vw;
+    width: 100%;
+  }
+  .fitmin-product-card {
+    min-width: 0;
+    max-width: 100vw;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 6px 10px 6px;
+    border-radius: 16px;
+    font-size: 0.95rem;
+  }
+  .fitmin-product-card-img img {
+    width: 60px;
+    height: 60px;
+  }
+  .fitmin-product-card h3 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+  }
+  .fitmin-product-card p {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+  }
+  .fitmin-product-btn {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+  }
 }
 
 @media (min-width: 900px) {
