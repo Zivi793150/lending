@@ -94,7 +94,7 @@ function App() {
             </div>
             <h3>Деликатесы</h3>
             <p>Натуральные лакомства для поощрения и заботы.</p>
-            <a href="#" className="fitmin-btn fitmin-product-btn">Подробнее</a>
+            <a href="https://www.fitmin.com/ru/sobaki/lakomstva-dlya-sobak" target="_blank" rel="noopener noreferrer" className="fitmin-btn fitmin-product-btn">Подробнее</a>
           </div>
         </div>
       </section>
