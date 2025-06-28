@@ -528,7 +528,7 @@ body, .fitmin-landing {
   padding: 1rem 0.5rem;
   background: #FEF2E3;
   border-radius: 2rem;
-  margin: 0.5rem 0.25rem 0 0.25rem;
+  margin: 0.5rem 0.25rem 1.5rem 0.25rem;
   text-align: center;
 }
 
@@ -611,7 +611,7 @@ body, .fitmin-landing {
 .fitmin-footer {
   background: #46140C;
   color: #fff;
-  padding: 1rem 0.5rem 0.5rem;
+  padding: 1.2rem 0.5rem 0.7rem;
   text-align: center;
 }
 
@@ -756,6 +756,7 @@ body, .fitmin-landing {
   }
 
   .fitmin-products h2 {
+    font-size: 2.5rem;
     margin-top: 0;
     margin-bottom: 0.5rem;
   }
@@ -784,6 +785,7 @@ body, .fitmin-landing {
   .fitmin-form-section {
     padding: 1rem 0.5rem 0.5rem 0.5rem;
     margin: 0;
+    margin-bottom: 2.5rem;
   }
 
   .fitmin-form-section h2 {
@@ -801,7 +803,7 @@ body, .fitmin-landing {
   }
 
   .fitmin-footer {
-    padding: 4rem 3rem 2rem;
+    padding: 1.5rem 2vw 1rem;
   }
 
   .fitmin-footer-content {
@@ -935,6 +937,7 @@ body, .fitmin-landing {
   }
 
   .fitmin-products h2 {
+    font-size: 2.8rem;
     margin-top: 0;
     margin-bottom: 0.5rem;
   }
@@ -963,6 +966,7 @@ body, .fitmin-landing {
   .fitmin-form-section {
     padding: 1rem 0.5rem 0.5rem 0.5rem;
     margin: 0;
+    margin-bottom: 2.5rem;
   }
 
   .fitmin-form-section h2 {
@@ -974,7 +978,7 @@ body, .fitmin-landing {
   }
 
   .fitmin-footer {
-    padding: 5rem 5vw 3rem;
+    padding: 1.5rem 5vw 1rem;
   }
 
   .fitmin-footer-content {

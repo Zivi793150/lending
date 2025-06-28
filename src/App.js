@@ -70,7 +70,7 @@ function App() {
             </div>
             <h3>Для собак</h3>
             <p>Сухие и влажные корма для собак всех пород и возрастов.</p>
-            <a href="https://www.fitmin.com/ru/sobaki/sobaki" target="_blank" rel="noopener noreferrer" className="fitmin-btn fitmin-product-btn">Подробнее</a>
+            <a href="https://www.fitmin.com/ru/sobaki/lakomstva-dlya-sobak" target="_blank" rel="noopener noreferrer" className="fitmin-btn fitmin-product-btn">Подробнее</a>
           </div>
           <div className="fitmin-product-card">
             <div className="fitmin-product-card-img">
@@ -86,7 +86,7 @@ function App() {
             </div>
             <h3>Ветеринарные корма</h3>
             <p>Специализированные диеты для здоровья питомцев.</p>
-            <a href="https://www.fitmin.com/ru/sobaki/vlazhnye-korma" target="_blank" rel="noopener noreferrer" className="fitmin-btn fitmin-product-btn">Подробнее</a>
+            <a href="https://www.fitmin.com/ru/sobaki/pishchevye-dobavki-0" target="_blank" rel="noopener noreferrer" className="fitmin-btn fitmin-product-btn">Подробнее</a>
           </div>
           <div className="fitmin-product-card">
             <div className="fitmin-product-card-img">
@@ -160,35 +160,26 @@ function App() {
         <div className="fitmin-container">
           <div className="fitmin-footer-content">
             <div className="fitmin-footer-section">
-              <h3>Fitmin</h3>
-              <p>Качественные корма для ваших питомцев</p>
+              <h3>Fitmin Kazakhstan</h3>
+              <p>Качественные корма для ваших животных</p>
+              <p>АЛМАТЫ, ПР. АБАЯ, Д. 115/96, 101</p>
             </div>
             <div className="fitmin-footer-section">
               <h3>Контакты</h3>
-              <p>Телефон: <span className="fitmin-placeholder">уточняется</span></p>
-              <p>Email: <span className="fitmin-placeholder">уточняется</span></p>
+              <p>Телефон отдела продаж:<br/>+7 707 933 7737,<br/>+7 777 237 3030</p>
+              <p>Email: <a href="mailto:order@fitmin.com.kz" style={{color: '#95AC23', textDecoration: 'underline'}}>order@fitmin.com.kz</a></p>
             </div>
             <div className="fitmin-footer-section">
               <h3>Социальные сети</h3>
               <div className="fitmin-social-links">
-                <a href="https://www.instagram.com/fitmin.international/" target="_blank" rel="noopener noreferrer" className="fitmin-social-link">
-                  <i className="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.youtube.com/channel/UCgvWtRFkGnc2zj8OObu6pcQ" target="_blank" rel="noopener noreferrer" className="fitmin-social-link">
-                  <i className="fab fa-youtube"></i>
-                </a>
-                <a href="https://www.linkedin.com/company/dibaq-international/" target="_blank" rel="noopener noreferrer" className="fitmin-social-link">
-                  <i className="fab fa-linkedin"></i>
-                </a>
-                <a href="https://www.facebook.com/FitminInternational" target="_blank" rel="noopener noreferrer" className="fitmin-social-link">
-                  <i className="fab fa-facebook"></i>
-                </a>
+                <span className="fitmin-social-link"><i className="fab fa-instagram"></i></span>
+                <span className="fitmin-social-link"><i className="fab fa-youtube"></i></span>
+                <span className="fitmin-social-link"><i className="fab fa-tiktok"></i></span>
               </div>
             </div>
           </div>
           <div className="fitmin-footer-bottom">
-            <p>Copyright © 2010 - 2025 Fitmin.com, všechna práva vyhrazena | Cookies</p>
-            <p>Vytvořilo PLEGI s.r.o.</p>
+            <p>Copyright © 2025 Fitmin Kazakhstan</p>
           </div>
         </div>
       </footer>
