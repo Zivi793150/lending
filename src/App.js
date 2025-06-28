@@ -103,14 +103,6 @@ function App() {
       <section
         className="fitmin-advantages"
         id="advantages"
-        style={{
-          minHeight: '480px',
-          padding: '70px 7vw 70px 7vw',
-          marginBottom: '70px',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-        }}
       >
         <div
           className="fitmin-advantages-bg"
