@@ -10,24 +10,28 @@ function App() {
     <div className="fitmin-landing">
       {/* Header */}
       <header className="fitmin-header">
-        <div className="fitmin-logo" style={{ color: '#fff', fontFamily: 'Montserrat, Arial, sans-serif', fontWeight: 800, fontSize: '2.2rem', letterSpacing: '0.01em' }}>Fitmin</div>
-        <nav className={`fitmin-nav${menuOpen ? ' open' : ''}`}>
+        <div className="fitmin-logo">Fitmin</div>
+        <nav className="fitmin-nav">
           <a href="#about">О бренде</a>
           <a href="#products">Продукция</a>
           <a href="#advantages">Преимущества</a>
           <a href="#contacts">Контакты</a>
         </nav>
         <a href="#form" className="fitmin-btn fitmin-header-btn">Оставить заявку</a>
-        <button className="fitmin-burger" onClick={() => setMenuOpen(!menuOpen)} aria-label="Открыть меню">
+        <button 
+          className={`fitmin-burger${menuOpen ? ' open' : ''}`} 
+          onClick={() => setMenuOpen(!menuOpen)} 
+          aria-label="Открыть меню"
+        >
           <span></span><span></span><span></span>
         </button>
         {menuOpen && (
           <div className="fitmin-mobile-menu">
-            <a href="#about" onClick={()=>setMenuOpen(false)}>О бренде</a>
-            <a href="#products" onClick={()=>setMenuOpen(false)}>Продукция</a>
-            <a href="#advantages" onClick={()=>setMenuOpen(false)}>Преимущества</a>
-            <a href="#contacts" onClick={()=>setMenuOpen(false)}>Контакты</a>
-            <a href="#form" className="fitmin-btn fitmin-header-btn" onClick={()=>setMenuOpen(false)}>Оставить заявку</a>
+            <a href="#about" onClick={() => setMenuOpen(false)}>О бренде</a>
+            <a href="#products" onClick={() => setMenuOpen(false)}>Продукция</a>
+            <a href="#advantages" onClick={() => setMenuOpen(false)}>Преимущества</a>
+            <a href="#contacts" onClick={() => setMenuOpen(false)}>Контакты</a>
+            <a href="#form" className="fitmin-btn fitmin-header-btn" onClick={() => setMenuOpen(false)}>Оставить заявку</a>
           </div>
         )}
       </header>
@@ -61,25 +65,33 @@ function App() {
         <h2>Линейка продукции</h2>
         <div className="fitmin-products-list">
           <div className="fitmin-product-card">
-            <img src="/images/feeding dogs.jpg" alt="Для собак" />
+            <div className="fitmin-product-card-img">
+              <img src="/images/feeding dogs.jpg" alt="Для собак" />
+            </div>
             <h3>Для собак</h3>
             <p>Сухие и влажные корма для собак всех пород и возрастов.</p>
             <a href="https://www.fitmin.com/ru/sobaki/sobaki" target="_blank" rel="noopener noreferrer" className="fitmin-btn fitmin-product-btn">Подробнее</a>
           </div>
           <div className="fitmin-product-card">
-            <img src="/images/20200401155735_DSC02018-01 (1).jpeg" alt="Для кошек" />
+            <div className="fitmin-product-card-img">
+              <img src="/images/20200401155735_DSC02018-01 (1).jpeg" alt="Для кошек" />
+            </div>
             <h3>Для кошек</h3>
             <p>Питательные корма и лакомства для кошек.</p>
             <a href="https://www.fitmin.com/ru/koshki/fitmin-dlya-koshek" target="_blank" rel="noopener noreferrer" className="fitmin-btn fitmin-product-btn">Подробнее</a>
           </div>
           <div className="fitmin-product-card">
-            <img src="/images/dental sticks kelp.png" alt="Ветеринарные корма" />
+            <div className="fitmin-product-card-img">
+              <img src="/images/dental sticks kelp.png" alt="Ветеринарные корма" />
+            </div>
             <h3>Ветеринарные корма</h3>
             <p>Специализированные диеты для здоровья питомцев.</p>
             <a href="https://www.fitmin.com/ru/sobaki/vlazhnye-korma" target="_blank" rel="noopener noreferrer" className="fitmin-btn fitmin-product-btn">Подробнее</a>
           </div>
           <div className="fitmin-product-card">
-            <img src="/images/EUROBEEF.jpg" alt="Деликатесы" />
+            <div className="fitmin-product-card-img">
+              <img src="/images/EUROBEEF.jpg" alt="Деликатесы" />
+            </div>
             <h3>Деликатесы</h3>
             <p>Натуральные лакомства для поощрения и заботы.</p>
             <a href="#" className="fitmin-btn fitmin-product-btn">Подробнее</a>
