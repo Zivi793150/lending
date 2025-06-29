@@ -136,7 +136,8 @@ function App() {
       {/* Форма заявки */}
       <section className="fitmin-form-section" id="form">
         <h2>Оставить заявку</h2>
-        <form className="fitmin-form">
+        <form className="fitmin-form" action="https://formspree.io/f/xpwrkkya" method="POST">
+          <input type="hidden" name="_captcha" value="false" />
           <div className="fitmin-form-row">
             <input type="text" name="name" placeholder="Имя" required />
             <input type="tel" name="phone" placeholder="Телефон" required />
