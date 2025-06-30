@@ -38,14 +38,15 @@ function App() {
 
       {/* Hero Section */}
       <section className="fitmin-hero">
+        <div className="fitmin-hero-img">
+          <img src="/images/banner.png" alt="Fitmin Banner" />
+        </div>
+      </section>
+      <section className="fitmin-hero-content-section">
         <div className="fitmin-hero-content">
           <h1>Забота о питомцах начинается с правильного питания</h1>
           <p>Премиальные корма Fitmin — свежесть, качество, забота</p>
           <a href="https://www.fitmin.com" target="_blank" rel="noopener noreferrer" className="fitmin-btn fitmin-hero-btn">Выбрать корм</a>
-        </div>
-        <div className="fitmin-hero-img">
-          {/* Большой баннер */}
-          <img src="/images/banner.png" alt="Fitmin Banner" />
         </div>
       </section>
 
